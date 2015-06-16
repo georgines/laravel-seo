@@ -1,0 +1,26 @@
+{
+    "name": "werxe/seo",
+    "description": "Seo management for Eloquent models.",
+    "keywords": [ "php", "laravel", "seo" ],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Bruno Gaspar",
+            "email": "bruno@werxe.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/database": "5.1.*"
+    },
+    "autoload": {
+        "classmap": [ "src/migrations" ],
+        "psr-4": { "Werxe\\Seo\\": "src/" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "minimum-stability": "stable"
+}
