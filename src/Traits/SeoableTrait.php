@@ -5,7 +5,16 @@ namespace Werxe\Seo\Traits;
 trait SeoableTrait
 {
     /**
-     * {@inheritdoc}
+     * Returns the seo entry that belongs to entity.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\MorphTo
+     */
+    abstract public function seo();
+
+    /**
+     * Determines if the entity has a seo entry attached.
+     *
+     * @return bool
      */
     public function hasSeo()
     {
@@ -13,7 +22,10 @@ trait SeoableTrait
     }
 
     /**
-     * {@inheritdoc}
+     * Creates a new seo entry with the given attributes.
+     *
+     * @param  array  $attributes
+     * @return \Werxe\Seo\Contracts\Seo
      */
     public function createSeo(array $attributes)
     {
@@ -21,7 +33,10 @@ trait SeoableTrait
     }
 
     /**
-     * {@inheritdoc}
+     * Updates the seo entry with the given attributes.
+     *
+     * @param  array  $attributes
+     * @return \Werxe\Seo\Contracts\Seo
      */
     public function updateSeo(array $attributes)
     {
@@ -32,7 +47,9 @@ trait SeoableTrait
     }
 
     /**
-     * {@inheritdoc}
+     * Deletes the seo entry that's attached to the entity.
+     *
+     * @return \Werxe\Seo\Contracts\Seo
      */
     public function deleteSeo()
     {
