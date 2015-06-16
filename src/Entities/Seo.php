@@ -25,7 +25,7 @@ class Seo extends Model implements SeoInterface
     /**
      * {@inheritdoc}
      */
-    public function item()
+    public function entity()
     {
         return $this->morphTo();
     }
