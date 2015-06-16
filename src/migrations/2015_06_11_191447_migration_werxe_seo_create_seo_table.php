@@ -15,7 +15,7 @@ class MigrationWerxeSeoCreateSeoTable extends Migration
         Schema::create('seo', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->morphs('item');
+            $table->morphs('entity');
             $table->string('title');
             $table->string('description')->nullable();
             $table->string('keywords')->nullable();
