@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class MigrationWerxeSeoCreateSeoTable extends Migration
+class MigrationWerxeLaravelSeoCreateSeoTable extends Migration
 {
     /**
      * Run the migrations.

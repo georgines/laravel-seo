@@ -20,7 +20,7 @@
             <directory suffix=".php">src/</directory>
             <exclude>
                 <directory>./src/migrations</directory>
-                <file>./src/SeoServiceProvider.php</file>
+                <file>./src/LaravelSeoServiceProvider.php</file>
             </exclude>
         </whitelist>
     </filter>

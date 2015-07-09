@@ -18,33 +18,20 @@
  * @link       http://werxe.com
  */
 
-namespace Werxe\LaravelSeo\Entities;
+namespace Werxe\LaravelSeo\Tests\Stubs;
 
+use Werxe\LaravelSeo\Entities\Seo;
 use Illuminate\Database\Eloquent\Model;
-use Werxe\LaravelSeo\Contracts\Seo as SeoInterface;
+use Werxe\LaravelSeo\Traits\SeoableTrait;
 
-class Seo extends Model implements SeoInterface
+class Post extends Model
 {
-    /**
-     * {@inheritdoc}
-     */
-    protected $table = 'seo';
+    use SeoableTrait;
 
-    /**
-     * {@inheritdoc}
-     */
-    protected $fillable = [
-        'title',
-        'noindex',
-        'keywords',
-        'description',
-    ];
+    protected $fillable = [ 'title' ];
 
-    /**
-     * {@inheritdoc}
-     */
-    public function entity()
+    public function seo()
     {
-        return $this->morphTo();
+        return $this->morphOne(Seo::class, 'entity');
     }
 }

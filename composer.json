@@ -19,7 +19,10 @@
     },
     "autoload": {
         "classmap": [ "src/migrations" ],
-        "psr-4": { "Werxe\\Seo\\": "src/" }
+        "psr-4": { "Werxe\\LaravelSeo\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Werxe\\LaravelSeo\\Tests\\": "tests/" }
     },
     "extra": {
         "branch-alias": {

@@ -18,7 +18,7 @@
  * @link       http://werxe.com
  */
 
-namespace Werxe\Seo\Traits;
+namespace Werxe\LaravelSeo\Traits;
 
 trait SeoableTrait
 {

@@ -18,7 +18,7 @@
  * @link       http://werxe.com
  */
 
-namespace Werxe\Seo\Contracts;
+namespace Werxe\LaravelSeo\Contracts;
 
 interface Seo
 {

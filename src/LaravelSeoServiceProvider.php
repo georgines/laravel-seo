@@ -18,11 +18,11 @@
  * @link       http://werxe.com
  */
 
-namespace Werxe\Seo;
+namespace Werxe\LaravelSeo;
 
 use Illuminate\Support\ServiceProvider;
 
-class SeoServiceProvider extends ServiceProvider
+class LaravelSeoServiceProvider extends ServiceProvider
 {
     /**
      * {@inheritdoc}
