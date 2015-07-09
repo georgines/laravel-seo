@@ -12,7 +12,7 @@ class SeoServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            realpath(__DIR_.'/migrations') => database_path('migrations'),
+            realpath(__DIR__.'/migrations') => database_path('migrations'),
         ], 'migrations');
     }
 
