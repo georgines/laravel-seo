@@ -1,5 +1,5 @@
 {
-    "name": "werxe/seo",
+    "name": "werxe/laravel-seo",
     "description": "Seo management for Eloquent models.",
     "keywords": [ "php", "laravel", "seo" ],
     "homepage": "http://werxe.com",
