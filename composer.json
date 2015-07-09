@@ -2,6 +2,7 @@
     "name": "werxe/seo",
     "description": "Seo management for Eloquent models.",
     "keywords": [ "php", "laravel", "seo" ],
+    "homepage": "http://werxe.com",
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -11,7 +12,10 @@
     ],
     "require": {
         "php": ">=5.5.9",
-        "illuminate/database": "5.1.*"
+        "illuminate/database": "~5.1"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.0"
     },
     "autoload": {
         "classmap": [ "src/migrations" ],
