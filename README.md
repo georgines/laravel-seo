@@ -1,4 +1,4 @@
-## Seo
+## Laravel Seo
 
 [![Build Status](https://travis-ci.org/werxe/laravel-seo.svg?branch=master)](https://travis-ci.org/werxe/laravel-seo)
 
@@ -61,7 +61,7 @@ class Post extends Eloquent
 
 ## Testing
 
-Werxe\Address has a [PHPUnit](https://phpunit.de/) test suite. To run the tests, run the following command from the project folder.
+Werxe\LaravelSeo has a [PHPUnit](https://phpunit.de/) test suite. To run the tests, run the following command from the project folder.
 
 ```sh
 $ phpunit
