@@ -59,6 +59,7 @@ trait SeoableTrait
     public function updateSeo(array $attributes)
     {
         $seo = $this->seo;
+
         $seo->fill($attributes)->save();
 
         return $seo;
