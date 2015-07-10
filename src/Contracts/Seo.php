@@ -28,4 +28,20 @@ interface Seo
      * @return \Illuminate\Database\Eloquent\Relations\MorphTo
      */
     public function entity();
+
+    /**
+     * Accessor for the "meta" attribute.
+     *
+     * @param  string  $meta
+     * @return array
+     */
+    public function getMetaAttribute($meta);
+
+    /**
+     * Mutator for the "meta" attribute.
+     *
+     * @param  array  $meta
+     * @return void
+     */
+    public function setMetaAttribute(array $meta);
 }

@@ -39,10 +39,15 @@ class SeoTest extends FunctionalTestCase
         $post->createSeo([
             'title'       => 'My Seoable Post Title',
             'description' => 'Foo',
+            'meta' => [
+                'published_time' => time(),
+                'section'        => 'news',
+            ],
         ]);
 
         $post = $post->fresh();
 
+        $this->assertSame('news', $post->seo->meta->get('section'));
         $this->assertSame('My Seoable Post Title', $post->seo->title);
 
         $seo = Seo::find(1);

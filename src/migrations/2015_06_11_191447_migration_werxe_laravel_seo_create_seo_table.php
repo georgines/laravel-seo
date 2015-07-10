@@ -39,6 +39,7 @@ class MigrationWerxeLaravelSeoCreateSeoTable extends Migration
             $table->string('description')->nullable();
             $table->string('keywords')->nullable();
             $table->boolean('noindex')->default(0);
+            $table->text('meta')->nullable();
 
             $table->engine = 'InnoDB';
         });
