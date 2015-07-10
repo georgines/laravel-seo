@@ -102,6 +102,18 @@ $post->updateSeo([
 ]);
 ```
 
+#### Create or Update the SEO record
+
+In some situations we might not want to have to write code to check if an entity already has a SEO record or not, in those situations you can just use the `storeSeo()` method:
+
+```php
+$post = Post::find(1);
+
+$post->storeSeo([
+    'title' => 'SEO title of my awesome post',
+]);
+```
+
 #### Delete the SEO record from an entity
 
 If you need to delete the SEO record of an entity, you just need to call the `deleteSeo()` method:
