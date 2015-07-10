@@ -112,6 +112,20 @@ $post = Post::find(1);
 $post->deleteSeo();
 ```
 
+#### Retrieve the SEO record
+
+When you need to retrieve the SEO record from the entity you just need to call the `seo` property:
+
+```php
+$post = Post::find(1);
+
+$seo = $post->seo;
+
+echo $seo->title;
+
+echo $seo->meta->get('section');
+```
+
 ## Testing
 
 Werxe\LaravelSeo has a [PHPUnit](https://phpunit.de/) test suite. To run the tests, run the following command from the project folder.
