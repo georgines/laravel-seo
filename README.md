@@ -1,7 +1,8 @@
-## Laravel Seo
+## Laravel SEO
 
 [![Build Status](https://travis-ci.org/werxe/laravel-seo.svg?branch=master)](https://travis-ci.org/werxe/laravel-seo)
 
+Laravel SEO is package that allows you to manage your Eloquent entities SEO records easily and effortless.
 
 ## Requirements
 
@@ -57,6 +58,58 @@ class Post extends Eloquent
         return $this->morphOne(Seo::class, 'entity');
     }
 }
+```
+
+## Usage
+
+Now that you have the package installed and your model(s) set up, it's time to learn how to use this beauty.
+
+#### Check if an entity has a SEO record
+
+```php
+$post = Post::find(1);
+
+if (! $post->hasSeo()) {
+    echo "Post doesn't have a SEO record!";
+}
+```
+
+#### Create a SEO record on the entity
+
+Since our post doesn't have a SEO record, we'll create one, with some basic data.
+
+```php
+$post = Post::find(1);
+
+$post->createSeo([
+    'title'    => 'SEO title of my awesome post',
+    'keywords' => 'foo, bar, baz',
+]);
+```
+
+#### Update the SEO record on the entity
+
+In this example we'll update the SEO record of a post and we're going to add some extra meta properties.
+
+```php
+$post = Post::find(1);
+
+$post->updateSeo([
+    'meta' => [
+        'published_time' => time(),
+        'section'        => 'news',
+    ],
+]);
+```
+
+#### Delete the SEO record from an entity
+
+If you need to delete the SEO record of an entity, you just need to call the `deleteSeo()` method:
+
+```php
+$post = Post::find(1);
+
+$post->deleteSeo();
 ```
 
 ## Testing
