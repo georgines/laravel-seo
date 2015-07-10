@@ -1,6 +1,6 @@
 ## Laravel SEO
 
-[![Build Status](https://travis-ci.org/werxe/laravel-seo.svg?branch=master)](https://travis-ci.org/werxe/laravel-seo)
+[![Build Status](https://travis-ci.org/werxe/laravel-seo.svg?branch=1.0)](https://travis-ci.org/werxe/laravel-seo)
 
 Laravel SEO is package that allows you to manage your Eloquent entities SEO records easily and effortless.
 
