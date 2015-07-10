@@ -66,6 +66,19 @@ trait SeoableTrait
     }
 
     /**
+     * Creates or Updates the seo entry with the given attributes.
+     *
+     * @param  array  $attributes
+     * @return \Werxe\LaravelSeo\Contracts\Seo
+     */
+    public function storeSeo(array $attributes)
+    {
+        $method = ! $this->seo ? 'createSeo' : 'updateSeo';
+
+        return $this->{$method}($attributes);
+    }
+
+    /**
      * Deletes the seo entry that's attached to the entity.
      *
      * @return \Werxe\LaravelSeo\Contracts\Seo

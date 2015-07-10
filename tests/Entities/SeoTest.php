@@ -36,7 +36,7 @@ class SeoTest extends FunctionalTestCase
     {
         $post = $this->createPost();
 
-        $post->createSeo([
+        $post->storeSeo([
             'title'       => 'My Seoable Post Title',
             'description' => 'Foo',
             'meta' => [
@@ -62,7 +62,7 @@ class SeoTest extends FunctionalTestCase
     {
         $post = $this->it_can_create_a_seo_record_on_an_entity();
 
-        $post->updateSeo([
+        $post->storeSeo([
             'title'       => 'My Updated Seoable Post Title',
             'description' => 'Foo',
         ]);
