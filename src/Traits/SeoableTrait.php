@@ -43,7 +43,7 @@ trait SeoableTrait
      * Creates a new seo entry with the given attributes.
      *
      * @param  array  $attributes
-     * @return \Werxe\Seo\Contracts\Seo
+     * @return \Werxe\LaravelSeo\Contracts\Seo
      */
     public function createSeo(array $attributes)
     {
@@ -54,7 +54,7 @@ trait SeoableTrait
      * Updates the seo entry with the given attributes.
      *
      * @param  array  $attributes
-     * @return \Werxe\Seo\Contracts\Seo
+     * @return \Werxe\LaravelSeo\Contracts\Seo
      */
     public function updateSeo(array $attributes)
     {
@@ -68,7 +68,7 @@ trait SeoableTrait
     /**
      * Deletes the seo entry that's attached to the entity.
      *
-     * @return \Werxe\Seo\Contracts\Seo
+     * @return \Werxe\LaravelSeo\Contracts\Seo
      */
     public function deleteSeo()
     {
