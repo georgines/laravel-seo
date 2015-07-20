@@ -30,18 +30,6 @@ trait SeoableTrait
     abstract public function seo();
 
     /**
-     * Boot the seoable trait for a model.
-     *
-     * @return void
-     */
-    public static function bootSeoableTrait()
-    {
-        static::deleted(function ($model) {
-            $model->deleteSeo();
-        });
-    }
-
-    /**
      * Determines if the entity has a seo entry attached.
      *
      * @return bool
