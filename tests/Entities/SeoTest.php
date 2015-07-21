@@ -11,7 +11,7 @@
  * bundled with this package in the LICENSE file.
  *
  * @package    Laravel Seo
- * @version    1.0.0
+ * @version    1.0.1
  * @author     Werxe LTD
  * @license    BSD License (3-clause)
  * @copyright  (c) 2011-2015, Werxe LTD

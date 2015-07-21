@@ -11,6 +11,12 @@ We do not give estimated times for completion on `Accepted` proposals.
 
 ---
 
+### v1.0.1 - 2015-07-21
+
+`UPDATED`
+
+- `composer.json` to fix Composer warnings about migrations.
+
 ### v1.0.0 - 2015-07-10
 
 - Stable Release
